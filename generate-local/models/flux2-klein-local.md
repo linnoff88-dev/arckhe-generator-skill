@@ -1,6 +1,6 @@
-# flux2-klein (inemaimg, GPU local) — ROTA PADRÃO
+# flux2-klein (ARCKHÉimg, GPU local) — ROTA PADRÃO
 
-Modelo de imagem que roda na GPU desta máquina, servido pelo projeto `inemaimg`.
+Modelo de imagem que roda na GPU desta máquina, servido pelo projeto `ARCKHÉimg`.
 É a rota padrão para **qualquer** imagem: custo zero, ~6 s por imagem, sem rate
 limit e sem nada saindo da máquina. Só saia daqui pelas razões listadas no
 SKILL.md.
@@ -8,7 +8,7 @@ SKILL.md.
 | Campo | Valor |
 |---|---|
 | Model ID | `flux2-klein` |
-| Provider | local — `inemaimg` (`~/projetos/inemaimg`, `server.py`) |
+| Provider | local — `ARCKHÉimg` (`~/projetos/ARCKHÉimg`, `server.py`) |
 | Método | Sync (responde com a imagem na mesma chamada) |
 | Tipo | Imagem |
 | API key | nenhuma |
@@ -23,7 +23,7 @@ GET  http://localhost:8000/health     -> {"status":"ok","loaded_model":"flux2-kl
 ```
 
 Checar `/health` antes de uma sequência longa. Se não responder, o servidor está
-fora: subir com o docker-compose de `~/projetos/inemaimg` e avisar o usuário —
+fora: subir com o docker-compose de `~/projetos/ARCKHÉimg` e avisar o usuário —
 não cair para rota paga por causa disso sem perguntar.
 
 ## Request
@@ -51,7 +51,7 @@ alternativos; se um dia mudar, o erro aparece na hora e se corrige aqui.
 
 ## Notas
 
-- Outros modelos no mesmo servidor (ver `~/projetos/inemaimg/MODELOS.md`):
+- Outros modelos no mesmo servidor (ver `~/projetos/ARCKHÉimg/MODELOS.md`):
   `qwen-image-edit-2511` para **edição e multi-imagem**, `ernie-image` para
   text-to-image puro. Trocar de modelo faz o servidor recarregar pesos — leva
   dezenas de segundos, então agrupe as gerações por modelo.

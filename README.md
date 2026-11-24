@@ -1,4 +1,4 @@
-﻿# generator-skill
+# generator-skill
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -12,7 +12,7 @@
 
 ## ðŸ“– Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/generator-skill/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/
 
 Duas versÃµes da skill `/generate` â€” um comando para o agente gerar imagens e
 vÃ­deos sob demanda, escolher a rota de menor custo, controlar gasto e salvar
@@ -35,7 +35,7 @@ barata** â€” tem respostas opostas dependendo da mÃ¡quina.
 | **PortÃ£o de custo** | existe, quase nunca dispara | dispara em toda execuÃ§Ã£o |
 | **"Rascunhe barato, finalize caro"** | sem sentido â€” Ã© o mesmo modelo | Ã© a regra que mais economiza |
 | **Livro-caixa** | existe, quase sempre zerado | Ã© o coraÃ§Ã£o da skill |
-| **Depende de** | servidor `inemaimg` no ar (porta 8000) | `FAL_KEY` + `KIE_API_KEY` num `.env` |
+| **Depende de** | servidor `ARCKHÉimg` no ar (porta 8000) | `FAL_KEY` + `KIE_API_KEY` num `.env` |
 | **Teto de aviso** | $20/mÃªs | configurÃ¡vel, padrÃ£o $50/mÃªs |
 
 O que **nÃ£o** muda entre as duas, porque Ã© o que faz o sistema durar: uma receita

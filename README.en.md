@@ -6,7 +6,7 @@
 
 ## 📖 Usage guide
 
-Complete guide (landing page + step-by-step instructions): **https://inematds.github.io/generator-skill/guia/en/**
+Complete guide (landing page + step-by-step instructions): **https://linnoff88-dev.github.io/
 
 Two versions of the `/generate` skill — one command for the agent to generate images and
 videos on demand, choose the lowest-cost route, control spending, and save
@@ -29,7 +29,7 @@ cheapest** — has opposite answers depending on the machine.
 | **Cost gate** | exists, almost never triggers | triggers on every run |
 | **“Draft cheap, finish expensive”** | makes no sense — it’s the same model | the rule that saves the most |
 | **Ledger** | exists, almost always empty | the heart of the skill |
-| **Depends on** | `inemaimg` server running (port 8000) | `FAL_KEY` + `KIE_API_KEY` in a `.env` |
+| **Depends on** | `ARCKHÉimg` server running (port 8000) | `FAL_KEY` + `KIE_API_KEY` in a `.env` |
 | **Warning threshold** | $20/month | configurable, default $50/month |
 
 What **doesn’t** change between the two, because it’s what makes the system

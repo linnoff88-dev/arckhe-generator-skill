@@ -6,7 +6,7 @@
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso): **https://inematds.github.io/generator-skill/guia/es/**
+Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/
 
 Dos versiones de la skill `/generate`: un comando para que el agente genere imágenes y
 videos bajo demanda, elija la ruta de menor costo, controle el gasto y guarde
@@ -29,7 +29,7 @@ barata**— tiene respuestas opuestas según la máquina.
 | **Control de costos** | existe, casi nunca se activa | se activa en cada ejecución |
 | **«Haz un borrador barato y finaliza con uno caro»** | no tiene sentido: es el mismo modelo | es la regla que más ahorra |
 | **Libro de cuentas** | existe, casi siempre está en cero | es el corazón de la skill |
-| **Depende de** | servidor `inemaimg` en funcionamiento (puerto 8000) | `FAL_KEY` + `KIE_API_KEY` en un `.env` |
+| **Depende de** | servidor `ARCKHÉimg` en funcionamiento (puerto 8000) | `FAL_KEY` + `KIE_API_KEY` en un `.env` |
 | **Límite de aviso** | $20/mes | configurable, predeterminado: $50/mes |
 
 Lo que **no** cambia entre las dos, porque es lo que hace que el sistema perdure:

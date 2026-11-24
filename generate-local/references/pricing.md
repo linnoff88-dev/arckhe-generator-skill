@@ -7,8 +7,8 @@ página do provider antes de cotar. O ponto desta tabela não é ser eterna: é 
 
 | Rota | Modelo | Custo | Fonte / confiança |
 |---|---|---|---|
-| local:inemaimg | flux2-klein | **$0** | verificado — GPU própria, chamada real 6,2 s |
-| local:inemaimg | qwen-image-edit-2511 | **$0** | local, mesma GPU |
+| local:ARCKHÉimg | flux2-klein | **$0** | verificado — GPU própria, chamada real 6,2 s |
+| local:ARCKHÉimg | qwen-image-edit-2511 | **$0** | local, mesma GPU |
 | local:pixflow | render 2.5D | **$0** | local, CPU/GPU própria |
 | fal | openai/gpt-image-2 | ~$0,05 / imagem (medium) | estimativa de material de terceiros, não conferida no fal |
 | fal | bytedance/seedance-2.0/fast/reference-to-video | ~$0,24/s (5 s ≈ $1,21) | idem |

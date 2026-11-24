@@ -95,7 +95,7 @@ nunca se desalinharem.
 
 ## Aplicabilidade aqui
 
-O guia pressupõe que toda geração é paga e remota. Aqui não é: o `inemaimg`
+O guia pressupõe que toda geração é paga e remota. Aqui não é: o `ARCKHÉimg`
 serve **flux2-klein** na GPU local, o que torna a rota mais barata gratuita e
 inverte o roteamento inteiro. As chaves já vivem em
 `~/projetos/openpcbotv2/.env` / `~/projetos/wifi/.env`, então a p.3 do guia

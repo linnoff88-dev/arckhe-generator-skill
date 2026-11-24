@@ -24,7 +24,7 @@ passos:
 
 | Tarefa | Rota | Custo |
 |---|---|---|
-| Imagem (qualquer coisa) | inemaimg / flux2-klein na GPU local | **$0** |
+| Imagem (qualquer coisa) | ARCKHÉimg / flux2-klein na GPU local | **$0** |
 | Imagem com texto legível dentro | fal.ai / GPT Image 2 | ~$0,05 |
 | Vídeo a partir de imagens (câmera, parallax 2.5D) | skill `pixflow-motion`, local | **$0** |
 | Vídeo generativo (movimento que não existe na cena) | Kie AI / Kling | pago, cota antes |
@@ -67,7 +67,7 @@ e regra de pasta escritos uma vez passam a valer sempre.
 cp -r generate-local ~/.claude/skills/generate
 ```
 
-Requer o servidor do `inemaimg` no ar (`~/projetos/inemaimg`, porta 8000). A
+Requer o servidor do `ARCKHÉimg` no ar (`~/projetos/ARCKHÉimg`, porta 8000). A
 skill checa `/health` antes de gerar e, se estiver fora, **falha dizendo como
 subir** em vez de cair silenciosamente para uma rota paga.
 
@@ -121,7 +121,7 @@ copiadas para outro arquivo, nunca impressas, nunca coladas em código.
 
 ## O que está verificado e o que não está
 
-Verificado por chamada real (2026-08-01): o endpoint do inemaimg, o campo
+Verificado por chamada real (2026-08-01): o endpoint do ARCKHÉimg, o campo
 `image` na resposta, o tempo de ~6 s, e o ciclo completo gerar → salvar → log →
 saldo, incluindo a falha limpa com o servidor fora do ar.
 

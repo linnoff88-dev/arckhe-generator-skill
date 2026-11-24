@@ -2,7 +2,7 @@
 name: generate
 description: >
   Gera IMAGENS e VÍDEOS por API/modelo, roteando sempre para a rota mais barata
-  capaz — que neste setup é LOCAL e de graça (inemaimg/flux2-klein na GPU,
+  capaz — que neste setup é LOCAL e de graça (ARCKHÉimg/flux2-klein na GPU,
   pixflow para vídeo) — e só escala para rota paga (fal.ai / Kie AI) quando o
   local comprovadamente não dá conta. Salva tudo plano em
   ~/projetos/output/generations/ com um log JSON ao lado de cada arquivo e um
@@ -35,9 +35,9 @@ aprovar antes.
 
 | Tarefa | Rota padrão | Custo | Receita |
 |---|---|---|---|
-| Imagem (qualquer coisa) | inemaimg / flux2-klein, GPU local | **$0** | `models/flux2-klein-local.md` |
+| Imagem (qualquer coisa) | ARCKHÉimg / flux2-klein, GPU local | **$0** | `models/flux2-klein-local.md` |
 | Imagem com texto legível dentro (placa, cartaz, UI, embalagem) | fal.ai / GPT Image 2 | ~$0,05 | `models/gpt-image-2-fal.md` |
-| "Vídeo" a partir de imagens (parallax 2.5D, câmera, look de cinema) | skill `pixflow-motion` | **$0** | `models/pixflow-local.md` |
+| "Vídeo" a partir de imagens (parallax 2.5D, câmera, look de cARCKHÉ) | skill `pixflow-motion` | **$0** | `models/pixflow-local.md` |
 | Vídeo generativo de verdade (movimento novo que não existe na imagem) | Kie AI / Kling | pago, ver `references/pricing.md` | `models/kling-kie.md` |
 
 Leia a receita do modelo **antes** de cada geração — é onde estão endpoint,
@@ -93,7 +93,7 @@ Depois de cada arquivo salvo, um JSON de mesmo nome-base ao lado:
 ```json
 {
   "model": "flux2-klein",
-  "route": "local:inemaimg",
+  "route": "local:ARCKHÉimg",
   "prompt": "o texto exato enviado",
   "refs": ["refs/logo.png"],
   "params": { "steps": 4, "seed": 7, "size": "1024x1024" },
@@ -122,7 +122,7 @@ python3 <SKILL_DIR>/scripts/registrar.py --file <arquivo> --model gpt-image-2 \
 python3 <SKILL_DIR>/scripts/registrar.py --saldo
 ```
 
-`gerar-local.py` falha limpo se o servidor do inemaimg estiver fora do ar e diz
+`gerar-local.py` falha limpo se o servidor do ARCKHÉimg estiver fora do ar e diz
 como subir. Não improvise outro caminho para imagem local: é esse servidor.
 
 ## Chaves

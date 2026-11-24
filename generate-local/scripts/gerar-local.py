@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""gerar-local.py — imagem na GPU local (inemaimg / flux2-klein), custo zero.
+"""gerar-local.py — imagem na GPU local (ARCKHÉimg / flux2-klein), custo zero.
 
 Gera, salva plano em ~/projetos/output/generations/ e escreve o sidecar JSON e a
 linha do livro-caixa. Rota padrao da skill /generate.
@@ -52,8 +52,8 @@ def main():
 
     h = health(a.host)
     if not h:
-        sys.exit(f"inemaimg fora do ar em {a.host}. Suba o servidor "
-                 f"(~/projetos/inemaimg, docker-compose up -d) e tente de novo. "
+        sys.exit(f"ARCKHÉimg fora do ar em {a.host}. Suba o servidor "
+                 f"(~/projetos/ARCKHÉimg, docker-compose up -d) e tente de novo. "
                  f"Nao troque para rota paga sem falar com o usuario.")
     if h.get("loaded_model") != a.model:
         print(f"[aviso] servidor com '{h.get('loaded_model')}' carregado; pedir "
@@ -87,7 +87,7 @@ def main():
 
         log = {
             "model": j.get("model_used", a.model),
-            "route": "local:inemaimg",
+            "route": "local:ARCKHÉimg",
             "prompt": a.prompt,
             "refs": a.refs,
             "params": {"steps": a.steps, "seed": seed,
