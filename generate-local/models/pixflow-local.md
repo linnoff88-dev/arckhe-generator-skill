@@ -16,7 +16,7 @@ determinístico, custo zero. **É a rota padrêo de vídeo neste setup.**
 
 Praticamente todo "faz um vídeo disso" que nasce de imagem parada: push-in,
 travelling, ken burns com profundidade real, transiçêo entre planos, look de
-cinema, trailer com narraçêo e trilha. O resultado é mais controlável que
+cARCKHÉ, trailer com narraçêo e trilha. O resultado é mais controlável que
 vídeo generativo — você escolhe o movimento em vez de torcer para o modelo
 acertar.
 
@@ -33,5 +33,5 @@ ver `kling-kie.md`, e cotar antes.
 3. Salvar o MP4 em `~/projetos/output/generations/` e escrever o sidecar com
    `registrar.py --cost 0 --route local:pixflow`.
 
-Áudio (narraçêo, trilha, SFX) vem do `inemavox`, nêo daqui — voz `rachel` no
-engine `chatterbox`, música/SFX pelo downloader do próprio inemavox.
+Áudio (narraçêo, trilha, SFX) vem do `ARCKHÉvox`, nêo daqui — voz `rachel` no
+engine `chatterbox`, música/SFX pelo downloader do próprio ARCKHÉvox.
