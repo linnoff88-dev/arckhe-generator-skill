@@ -1,12 +1,12 @@
 # GPT Image 2 (fal.ai) — rota paga, só para texto dentro da imagem
 
-Única razão para sair do flux2-klein numa imagem: **letra legível** renderizada
+Única razêo para sair do flux2-klein numa imagem: **letra legível** renderizada
 dentro da arte (placa, cartaz, menu, embalagem, mockup de UI). É onde os modelos
 locais de 4–9B falham de forma previsível.
 
 | Campo | Valor |
 |---|---|
-| Model ID | `openai/gpt-image-2` — **NÃO VERIFICADO**, confirmar na página do modelo em fal.ai antes do primeiro uso |
+| Model ID | `openai/gpt-image-2` — **NêO VERIFICADO**, confirmar na página do modelo em fal.ai antes do primeiro uso |
 | Provider | fal.ai |
 | Método | Sync |
 | Tipo | Imagem |
@@ -22,8 +22,8 @@ Authorization: Key {FAL_KEY}
 Content-Type: application/json
 ```
 
-Atenção: fal usa `Key`, **não** `Bearer`. Trocar a palavra é o erro de auth mais
-comum entre providers. Edição de imagem existente costuma ser o mesmo caminho
+Atençêo: fal usa `Key`, **nêo** `Bearer`. Trocar a palavra é o erro de auth mais
+comum entre providers. Ediçêo de imagem existente costuma ser o mesmo caminho
 com `/edit` no fim — confirmar na doc.
 
 ## Request / Response

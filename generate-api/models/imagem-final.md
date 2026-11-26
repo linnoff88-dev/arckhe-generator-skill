@@ -7,7 +7,7 @@ de forma previsível.
 
 | Campo | Valor |
 |---|---|
-| Model ID | `openai/gpt-image-2` — **NÃO VERIFICADO** |
+| Model ID | `openai/gpt-image-2` — **NêO VERIFICADO** |
 | Provider | fal.ai |
 | Método | Sync |
 | Tipo | Imagem |
@@ -22,8 +22,8 @@ POST https://fal.run/{model-id}
 Authorization: Key {FAL_KEY}
 ```
 
-Edição de uma imagem existente costuma ser o mesmo caminho com `/edit` no fim —
-confirmar na documentação do modelo.
+Ediçêo de uma imagem existente costuma ser o mesmo caminho com `/edit` no fim —
+confirmar na documentaçêo do modelo.
 
 ## Request / Response
 
@@ -33,7 +33,7 @@ modelo de rascunho: cada tentativa-e-erro custa cinco vezes mais.
 ## A regra que economiza
 
 Chegue aqui com o prompt **já resolvido** no modelo barato. O papel deste
-modelo é executar uma decisão que já foi tomada, não ajudar a decidir. Quem
+modelo é executar uma decisêo que já foi tomada, nêo ajudar a decidir. Quem
 explora no modelo caro paga preço de final por rascunho descartável — e a
 diferença some numa imagem, mas em quarenta é a fatura inteira.
 

@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>generator-skill — a skill /generate em duas versões</title>
-<meta content="Duas versões da skill /generate para agentes: uma que roda modelo local na GPU (custo zero) e outra 100% por API paga, com portão de custo, livro-caixa e log de prompt." name="description"/>
+<meta content="Duas versões da skill /generate para agentes: uma que roda modelo local na GPU (custo zero) e outra 100% por API paga, com portêo de custo, livro-caixa e log de prompt." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
@@ -123,7 +123,7 @@
 <div>
 <span class="chip">Skill /generate · duas versões</span>
 <h1>Um comando gera imagem e vídeo — pela rota mais <span class="amb">barata</span>.</h1>
-<p class="lead">Roteamento por custo, aprovação antes de gastar, livro-caixa e o prompt guardado ao lado de cada arquivo.</p>
+<p class="lead">Roteamento por custo, aprovaçêo antes de gastar, livro-caixa e o prompt guardado ao lado de cada arquivo.</p>
 <div class="cta">
 <a class="btn" href="#guia">Começar o guia</a>
 <a class="btn ghost" href="https://github.com/linnoff88-dev/generator-skill" rel="noopener" target="_blank">Ver no GitHub</a>
@@ -135,17 +135,17 @@
 <section id="oque"><div class="wrap">
 <span class="chip">O que é</span>
 <h2>Uma skill que o agente lê antes de gerar qualquer mídia</h2>
-<p class="sub">Skill é uma pasta de arquivos Markdown que funciona como manual operacional: o agente relê a cada uso, então as regras escritas uma vez passam a valer sempre. Esta cobre imagem e vídeo — e, principalmente, o que costuma dar errado em volta deles.</p>
+<p class="sub">Skill é uma pasta de arquivos Markdown que funciona como manual operacional: o agente relê a cada uso, entêo as regras escritas uma vez passam a valer sempre. Esta cobre imagem e vídeo — e, principalmente, o que costuma dar errado em volta deles.</p>
 <div class="grid g3">
-<div class="card"><h3>💸 Roteia por custo</h3><p>Escolhe a rota mais barata que dá conta da tarefa e diz qual usou. Preço mora num arquivo com data, não no palpite do agente.</p></div>
-<div class="card"><h3>🛑 Não gasta sem aprovação</h3><p>Cota em dólar e espera o "pode". Uma aprovação vale uma execução. Teto mensal acumulado, porque portão por execução deixa passar trinta gastos pequenos.</p></div>
-<div class="card"><h3>🗂️ Não perde o prompt</h3><p>Biblioteca plana, um JSON ao lado de cada arquivo com prompt, modelo, parâmetros e custo. Três meses depois ainda dá para saber o que fez aquela imagem.</p></div>
+<div class="card"><h3>💸 Roteia por custo</h3><p>Escolhe a rota mais barata que dá conta da tarefa e diz qual usou. Preço mora num arquivo com data, nêo no palpite do agente.</p></div>
+<div class="card"><h3>🛑 Nêo gasta sem aprovaçêo</h3><p>Cota em dólar e espera o "pode". Uma aprovaçêo vale uma execuçêo. Teto mensal acumulado, porque portêo por execuçêo deixa passar trinta gastos pequenos.</p></div>
+<div class="card"><h3>🗂️ Nêo perde o prompt</h3><p>Biblioteca plana, um JSON ao lado de cada arquivo com prompt, modelo, parâmetros e custo. Três meses depois ainda dá para saber o que fez aquela imagem.</p></div>
 </div>
 </div></section>
 <section id="fluxo"><div class="wrap">
 <span class="chip">Como funciona</span>
 <h2>Cinco passos, sempre os mesmos</h2>
-<p class="sub">O fluxo não muda entre as duas versões. O que muda é para onde o passo 1 aponta.</p>
+<p class="sub">O fluxo nêo muda entre as duas versões. O que muda é para onde o passo 1 aponta.</p>
 <div class="flow">
 <span>Roteia</span><span class="arr">→</span>
 <span>Prepara referências</span><span class="arr">→</span>
@@ -155,27 +155,27 @@
 <span>Registra</span>
 </div>
 <div class="grid g3" style="margin-top:28px">
-<div class="card"><span class="num">1</span><h3>Roteia para o mais econômico</h3><p>Escolhe o modelo e o provedor, e lê a receita daquele modelo antes de chamar — endpoint, autenticação, formato do corpo, onde o arquivo aparece na resposta.</p></div>
-<div class="card"><span class="num">2</span><h3>Usa referências reais</h3><p>Logotipo, rosto e estilo vêm de arquivos em <code>refs/</code>. Descrever um logo em palavras devolve logo errado toda vez — se o arquivo não existe, a skill para e pede.</p></div>
+<div class="card"><span class="num">1</span><h3>Roteia para o mais econômico</h3><p>Escolhe o modelo e o provedor, e lê a receita daquele modelo antes de chamar — endpoint, autenticaçêo, formato do corpo, onde o arquivo aparece na resposta.</p></div>
+<div class="card"><span class="num">2</span><h3>Usa referências reais</h3><p>Logotipo, rosto e estilo vêm de arquivos em <code>refs/</code>. Descrever um logo em palavras devolve logo errado toda vez — se o arquivo nêo existe, a skill para e pede.</p></div>
 <div class="card"><span class="num">3</span><h3>Gera, síncrono ou assíncrono</h3><p>Modelo de vídeo devolve um id de job; a skill consulta o status e baixa na hora, porque URL de resultado expira em horas. O id fica salvo para retomar sem pagar de novo.</p></div>
-<div class="card"><span class="num">4</span><h3>Salva numa pasta plana</h3><p>Sem subpastas. Parece bagunça e é o contrário: qualquer galeria, script ou busca lê a biblioteca inteira sem configuração.</p></div>
-<div class="card"><span class="num">5</span><h3>Registra tudo</h3><p>JSON de mesmo nome-base ao lado do arquivo, mais uma linha no livro-caixa. O lançamento acontece quando o provedor aceita o job — não quando o arquivo chega.</p></div>
+<div class="card"><span class="num">4</span><h3>Salva numa pasta plana</h3><p>Sem subpastas. Parece bagunça e é o contrário: qualquer galeria, script ou busca lê a biblioteca inteira sem configuraçêo.</p></div>
+<div class="card"><span class="num">5</span><h3>Registra tudo</h3><p>JSON de mesmo nome-base ao lado do arquivo, mais uma linha no livro-caixa. O lançamento acontece quando o provedor aceita o job — nêo quando o arquivo chega.</p></div>
 <div class="card"><span class="num">+</span><h3>Cresce por arquivo</h3><p>Modelo novo é uma receita Markdown de dez minutos. Nada mais muda — é o que faz o sistema sobreviver à troca mensal de modelos.</p></div>
 </div>
 </div></section>
 <section id="versoes"><div class="wrap">
 <span class="chip">Versões</span>
 <h2>Duas, porque "mais barata" tem respostas opostas</h2>
-<p class="sub">Numa máquina com modelo rodando nela, a rota mais barata é gratuita e o portão de custo quase nunca dispara. Sem isso, toda geração custa — e o portão vira o coração da skill.</p>
+<p class="sub">Numa máquina com modelo rodando nela, a rota mais barata é gratuita e o portêo de custo quase nunca dispara. Sem isso, toda geraçêo custa — e o portêo vira o coraçêo da skill.</p>
 <div class="tblwrap"><table class="cmp">
 <tr><th></th><th>generate-local</th><th>generate-api</th></tr>
 <tr><td>Para</td><td>máquina com modelo rodando nela</td><td>qualquer máquina, tudo via API</td></tr>
 <tr><td>Rota mais barata</td><td><strong>local, $0</strong> (flux2-klein na GPU)</td><td>modelo barato pago, ~$0,02</td></tr>
 <tr><td>Modelo de cobrança</td><td>hardware já pago, custo marginal zero</td><td>pay-as-you-go por chamada</td></tr>
-<tr><td>Rota paga</td><td>exceção — duas razões só</td><td>é o único caminho</td></tr>
+<tr><td>Rota paga</td><td>exceçêo — duas razões só</td><td>é o único caminho</td></tr>
 <tr><td>Imagem com texto legível</td><td>rota paga (modelo local erra letra)</td><td>modelo top, pago</td></tr>
-<tr><td>Vídeo padrão</td><td>render 2.5D local, $0</td><td>generativo, $0,20–0,35/s</td></tr>
-<tr><td>Portão de custo</td><td>existe, quase nunca dispara</td><td>dispara em toda execução</td></tr>
+<tr><td>Vídeo padrêo</td><td>render 2.5D local, $0</td><td>generativo, $0,20–0,35/s</td></tr>
+<tr><td>Portêo de custo</td><td>existe, quase nunca dispara</td><td>dispara em toda execuçêo</td></tr>
 <tr><td>Rascunhar barato / finalizar caro</td><td>sem sentido — é o mesmo modelo</td><td>é a regra que mais economiza</td></tr>
 <tr><td>Depende de</td><td>servidor de imagem local no ar</td><td><code>FAL_KEY</code> + <code>KIE_API_KEY</code> num <code>.env</code></td></tr>
 </table></div>
@@ -185,19 +185,19 @@
 <h2>O que precisa estar no lugar</h2>
 <p class="sub">Escolha uma das duas versões por workspace — as duas declaram <code>name: generate</code>.</p>
 <div class="grid g3">
-<div class="card"><h3>Python 3</h3><p>Os scripts usam só biblioteca padrão. Sem dependências para instalar.</p><pre><span class="c"># confira</span>
+<div class="card"><h3>Python 3</h3><p>Os scripts usam só biblioteca padrêo. Sem dependências para instalar.</p><pre><span class="c"># confira</span>
 <span class="k">python3 --version</span></pre></div>
-<div class="card"><h3>Versão local: servidor de imagem</h3><p>A skill checa a saúde antes de gerar e, se estiver fora, falha dizendo como subir — em vez de cair para uma rota paga em silêncio.</p><pre><span class="c"># deve responder status ok</span>
+<div class="card"><h3>Versêo local: servidor de imagem</h3><p>A skill checa a saúde antes de gerar e, se estiver fora, falha dizendo como subir — em vez de cair para uma rota paga em silêncio.</p><pre><span class="c"># deve responder status ok</span>
 <span class="k">curl</span> <span class="s">localhost:8000/health</span></pre></div>
-<div class="card"><h3>Versão API: duas chaves</h3><p>Agregadores dão dezenas de modelos com uma chave e uma fatura só. Adicione <code>.env</code> ao <code>.gitignore</code> no primeiro dia.</p><pre><span class="c"># .env</span>
+<div class="card"><h3>Versêo API: duas chaves</h3><p>Agregadores dêo dezenas de modelos com uma chave e uma fatura só. Adicione <code>.env</code> ao <code>.gitignore</code> no primeiro dia.</p><pre><span class="c"># .env</span>
 FAL_KEY=<span class="s">sua_chave</span>
 KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 </div>
 </div></section>
 <section id="guia"><div class="wrap">
 <span class="chip">Guia de uso · passo a passo</span>
-<h2>Do clone à primeira geração</h2>
-<p class="sub">Comandos reais. A versão local gera de graça; a versão API nunca chama a API sem uma aprovação explícita no comando.</p>
+<h2>Do clone à primeira geraçêo</h2>
+<p class="sub">Comandos reais. A versêo local gera de graça; a versêo API nunca chama a API sem uma aprovaçêo explícita no comando.</p>
 <div class="step"><div class="b">1</div><div>
 <h3>Clone o repositório</h3>
 <p>As duas versões vivem em pastas separadas, com um README cada uma.</p>
@@ -205,7 +205,7 @@ KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 <span class="k">cd</span> generator-skill</pre>
 </div></div>
 <div class="step"><div class="b">2</div><div>
-<h3>Instale a versão que serve à sua máquina</h3>
+<h3>Instale a versêo que serve à sua máquina</h3>
 <p>Uma por workspace. Se instalar as duas com o mesmo nome, elas colidem.</p>
 <pre><span class="c"># máquina com modelo local rodando</span>
 <span class="k">cp -r</span> generate-local ~/.claude/skills/generate
@@ -214,14 +214,14 @@ KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 <span class="k">cp -r</span> generate-api &lt;workspace&gt;/.claude/skills/generate</pre>
 </div></div>
 <div class="step"><div class="b">3</div><div>
-<h3>Configure (só a versão API)</h3>
-<p>Escolha a pasta da biblioteca e o teto mensal de aviso. Dica de limite: carregue pouco crédito no primeiro pagamento — o provedor não gasta o que não tem.</p>
-<pre><span class="c"># _config.json, criado na primeira execução</span>
+<h3>Configure (só a versêo API)</h3>
+<p>Escolha a pasta da biblioteca e o teto mensal de aviso. Dica de limite: carregue pouco crédito no primeiro pagamento — o provedor nêo gasta o que nêo tem.</p>
+<pre><span class="c"># _config.json, criado na primeira execuçêo</span>
 { <span class="s">"pasta"</span>: <span class="s">"~/generations"</span>, <span class="s">"teto_mensal_usd"</span>: 50 }</pre>
 </div></div>
 <div class="step"><div class="b">4</div><div>
-<h3>Gere — versão local</h3>
-<p>Custo zero, poucos segundos. Sem custo marginal, rascunho e final são o mesmo modelo: varie a semente à vontade.</p>
+<h3>Gere — versêo local</h3>
+<p>Custo zero, poucos segundos. Sem custo marginal, rascunho e final sêo o mesmo modelo: varie a semente à vontade.</p>
 <pre><span class="k">python3</span> scripts/gerar-local.py \
   <span class="k">--prompt</span> <span class="s">"capa de curso, formas geométricas, fundo escuro"</span> \
   <span class="k">--projeto</span> capa-curso <span class="k">--desc</span> hero <span class="k">-n</span> 3
@@ -229,8 +229,8 @@ KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 <span class="c"># OK ...capa-curso_hero_1785563764.png  (6.2s, $0)</span></pre>
 </div></div>
 <div class="step"><div class="b">5</div><div>
-<h3>Cote antes — versão API</h3>
-<p><code>--estimar</code> imprime a cotação e sai sem gastar. É o que se mostra à pessoa antes de pedir o "pode".</p>
+<h3>Cote antes — versêo API</h3>
+<p><code>--estimar</code> imprime a cotaçêo e sai sem gastar. É o que se mostra à pessoa antes de pedir o "pode".</p>
 <pre><span class="k">python3</span> scripts/gerar.py <span class="k">--rota</span> fal <span class="k">--model</span> &lt;id&gt; \
   <span class="k">--prompt</span> <span class="s">"..."</span> <span class="k">--projeto</span> capa <span class="k">--desc</span> hero \
   <span class="k">--custo</span> 0.04 <span class="k">--estimar</span>
@@ -239,8 +239,8 @@ KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 <span class="c"># Nada foi gasto.</span></pre>
 </div></div>
 <div class="step"><div class="b">6</div><div>
-<h3>Execute só depois da aprovação</h3>
-<p>Sem <code>--confirmar</code> o script se recusa a chamar a API. A autorização fica no comando, não na memória de quem conduz.</p>
+<h3>Execute só depois da aprovaçêo</h3>
+<p>Sem <code>--confirmar</code> o script se recusa a chamar a API. A autorizaçêo fica no comando, nêo na memória de quem conduz.</p>
 <pre><span class="k">python3</span> scripts/gerar.py ... <span class="k">--confirmar</span>
 
 <span class="c"># vídeo assíncrono: submete, faz poll, baixa e guarda o task id</span>
@@ -248,7 +248,7 @@ KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 </div></div>
 <div class="step"><div class="b">7</div><div>
 <h3>Confira o gasto</h3>
-<p>O lançamento acontece quando o provedor aceita o job. Se a geração falhar depois disso, o dinheiro já saiu — e aparece marcado como pendente, em vez de sumir.</p>
+<p>O lançamento acontece quando o provedor aceita o job. Se a geraçêo falhar depois disso, o dinheiro já saiu — e aparece marcado como pendente, em vez de sumir.</p>
 <pre><span class="k">python3</span> scripts/registrar.py <span class="k">--saldo</span>
 
 <span class="c"># 2 run(s) cobrados sem arquivo salvo:</span>
@@ -260,7 +260,7 @@ KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 </div></div>
 <div class="step"><div class="b">8</div><div>
 <h3>Adicione um modelo novo</h3>
-<p>Copie o template de receita, preencha com a documentação do provedor e some a linha na tabela de preços com a data. Dez minutos, e nada mais muda.</p>
+<p>Copie o template de receita, preencha com a documentaçêo do provedor e some a linha na tabela de preços com a data. Dez minutos, e nada mais muda.</p>
 <pre><span class="k">cp</span> models/_template.md models/meu-modelo.md
 <span class="c"># preencha: model id, método (sync/async), endpoint, auth,</span>
 <span class="c"># corpo do request e onde o arquivo aparece na resposta</span></pre>
@@ -269,19 +269,19 @@ KIE_API_KEY=<span class="s">sua_chave</span></pre></div>
 <section id="exemplos"><div class="wrap">
 <span class="chip">Exemplos</span>
 <h2>O sistema por dentro</h2>
-<p class="sub">O fluxo completo e a decisão de rota que está por trás da separação em duas versões.</p>
+<p class="sub">O fluxo completo e a decisêo de rota que está por trás da separaçêo em duas versões.</p>
 <div class="ex">
 <figure><img alt="Diagrama do fluxo da skill: entradas de texto, referências e parâmetros passam pelo comando /generate e saem como imagem ou vídeo, em cinco passos" src="assets/ex1.jpg"/><figcaption>Os cinco passos: rotear para o modelo mais econômico, usar referências reais, gerar, salvar numa pasta única e registrar prompt, modelo e parâmetros.</figcaption></figure>
-<figure><img alt="Modelos criativos alcançáveis por duas rotas: um agregador por assinatura mensal ou agregadores pay-as-you-go" src="assets/ex2.jpg"/><figcaption>Os mesmos modelos, contas diferentes: assinatura mensal fixa, ou pay-as-you-go por chamada. A versão API assume pay-as-you-go — começa em zero e o custo é atribuível a cada geração.</figcaption></figure>
+<figure><img alt="Modelos criativos alcançáveis por duas rotas: um agregador por assinatura mensal ou agregadores pay-as-you-go" src="assets/ex2.jpg"/><figcaption>Os mesmos modelos, contas diferentes: assinatura mensal fixa, ou pay-as-you-go por chamada. A versêo API assume pay-as-you-go — começa em zero e o custo é atribuível a cada geraçêo.</figcaption></figure>
 </div>
 </div></section>
 <section id="roadmap"><div class="wrap">
 <span class="chip">Roadmap</span>
 <h2>Onde está e o que falta</h2>
-<p class="sub">O que foi verificado por execução real está marcado como tal; o resto está marcado como não verificado dentro das próprias receitas.</p>
-<div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Versão local, ponta a ponta</strong><span>Geração, salvamento plano, log JSON, livro-caixa e falha limpa com o servidor fora do ar — verificados por chamada real.</span></div></div>
-<div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Versão API, com os caminhos de perda de dinheiro cobertos</strong><span>Cotação, recusa sem aprovação, teto mensal, retomada por task id, e lançamento no livro-caixa mesmo quando a geração falha depois de cobrada.</span></div></div>
-<div class="phase"><div class="tag">Falta</div><div class="d"><strong>Confirmar IDs e preços contra as APIs reais</strong><span>Os IDs de modelo vieram de material de terceiros e estão marcados <em>não verificado</em>. Primeiro passo de quem instalar, sempre com cotação antes.</span></div></div>
+<p class="sub">O que foi verificado por execuçêo real está marcado como tal; o resto está marcado como nêo verificado dentro das próprias receitas.</p>
+<div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Versêo local, ponta a ponta</strong><span>Geraçêo, salvamento plano, log JSON, livro-caixa e falha limpa com o servidor fora do ar — verificados por chamada real.</span></div></div>
+<div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Versêo API, com os caminhos de perda de dinheiro cobertos</strong><span>Cotaçêo, recusa sem aprovaçêo, teto mensal, retomada por task id, e lançamento no livro-caixa mesmo quando a geraçêo falha depois de cobrada.</span></div></div>
+<div class="phase"><div class="tag">Falta</div><div class="d"><strong>Confirmar IDs e preços contra as APIs reais</strong><span>Os IDs de modelo vieram de material de terceiros e estêo marcados <em>nêo verificado</em>. Primeiro passo de quem instalar, sempre com cotaçêo antes.</span></div></div>
 <div class="phase"><div class="tag">Ideia</div><div class="d"><strong>Galeria da biblioteca</strong><span>Página única que lê a pasta plana e mostra tudo o que foi gerado, com o prompt de cada arquivo vindo do JSON ao lado.</span></div></div>
 </div></section>
 <footer>
